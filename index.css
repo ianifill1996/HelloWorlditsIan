@@ -1,0 +1,250 @@
+/* ========== GLOBAL STYLES ========== */
+/* - Reset default margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/* - Set base font and colors */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+}
+/* - Responsive layout */
+@media (max-width: 768px) {
+    .project-card {
+      flex-direction: column;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+/* ========== HEADER ========== */
+
+/* - Style the Web page */
+.website-page {
+    max-width: 1100px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(9, 9, 9, 0.1);
+}
+/* - Background, padding, center text */
+#site-header {
+    text-align: center;
+    border-radius: 10px;
+    background-color: navy;
+    padding: 1rem;
+    margin: 1rem;
+}
+.title-name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+/* ========== NAVIGATION ========== */
+/* - Layout navigation links horizontally */
+#site-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 0;
+} 
+/* Color after the link has been clicked */
+  
+#site-nav a {
+        color: navy;
+        text-decoration: underline;
+}
+
+#site-nav a:visited {
+    color: black;
+    text-decoration: underline; 
+}
+
+/* ========== ABOUT SECTION ========== */
+/* - Layout for about-container (video + text side-by-side) */
+#about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+/* - Responsive stack on mobile */
+@media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .about-text,
+    #intro-video {
+      width: 100%;
+    }
+  
+    #intro-video {
+      margin: 0 auto;
+    }
+  }
+/* - Style video and text separately */
+#intro-video {
+    
+    margin:  50px auto;
+}
+
+
+/* ========== PROJECTS SECTION ========== */
+#projects {
+    padding: 2rem;
+    background-color: #f0f2f5;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    color: navy;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-desc {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .project-img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    color: white;
+    background-color: navy;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #001f4d;
+  }
+  
+  /* Responsive Grid */
+  @media (min-width: 768px) {
+    #projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+  
+    .project-card {
+      margin-bottom: 0;
+    }
+  }
+/* ========== CONTACT FORM ========== */
+/* - Style input, textarea, and button */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .form-input,
+  .form-textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    border-color: navy;
+    outline: none;
+  }
+  
+  .form-textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+button,
+.submit-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.submit-btn:hover {
+  background-color: #001f4d;
+  transform: translateY(-2px);
+}
+/* - Add spacing between fields */
+/* - Make form responsive and clean */
+
+/* ========== FOOTER ========== */
+/* - Centered text, smaller font */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+/* - Padding and subtle background */
+.highlight {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    background-color: navy ;
+    margin: 25px auto;
+    border-radius: 10px;
+    display: inline-block;
+
+
+}

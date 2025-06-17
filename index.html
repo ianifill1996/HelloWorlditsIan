@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Author" content="Ian Ifill" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ian's Portfolio Website</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="website-page">
+      <header id="site-header">
+        <div class="container">
+        <h1 class="title-name">Ian's Tech Profolio Preview</h1>
+        </div>
+      </header>
+      <nav id="site-nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <section id="about">
+        <div class="about-container">
+         <div class="about-text">
+            <h2 class="section-title"><span class="highlight">About Me</span></h2>
+            <p class="bio">
+                Hello, world! My name is Ian Ifill. I’m originally from Brooklyn, NY, and now living in the great state of North Carolina. I have a strong background in customer service and finance, and I’m currently transitioning into tech. While pursuing a Computer Science degree at SNHU, I’ve been training in Python, the MERN stack, JavaScript, and HTML & CSS. I’m passionate about building both web and mobile applications.
+
+                Below, you’ll find some of the projects I’ve created to showcase my skills and growth as a developer. Each one highlights a different area of what I’ve been learning—from frontend design to working with APIs and Python scripts.
+                
+            </p>
+             <video id="intro-video" width="320" height="240" controls>
+            <source
+            src="video/A2BABC20-AABC-42E0-91CE-5324E5749E90.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2 class="section-title"> <span class="highlight">Projects</span></h2>
+
+        <div class="project-card">
+          <h3 class="project-title">IP Address Tracker</h3>
+          <p class="project-desc">
+            The IP Address Tracker is a responsive web app that fetches and
+            displays real-time location, timezone, and ISP data for any IP
+            address or domain using a third-party API.
+          </p>
+          <a
+            href="https://ianifill1996.github.io/IPtrackerProject/"
+            class="project-link"
+            >View Project</a
+          >
+          <img
+            src="images/73F84907-9C58-4837-9A01-7F7936CEE79B.png"
+            alt="screenshot"
+            class="project-img"
+          />
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">Photo Editing with Python</h3>
+          <p class="project-desc">
+            This Python Module allows you to Manipulate any Photo image of your
+            choosing
+          </p>
+          <a
+            href="https://github.com/ianifill1996/PhotoEditPython"
+            class="project-link"
+            >View Project</a
+          >
+          <img
+            src="images/EC079A63-0C4A-4E51-99FA-5DCCC464D129.png"
+            alt="screenshot"
+            class="project-img"
+          />
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">QR Code Project</h3>
+          <p class="project-desc">
+            Built A QR code from Frontend Challenger using Figma Files
+          </p>
+          <a
+            href="https://ianifill1996.github.io/QRcodefrontendproject/"
+            class="project-link"
+            >View Project</a
+          >
+          <img
+            src="images/719D89F1-A76D-458E-B2E9-D48D8BA636D7.png"
+            alt="screenshot"
+            class="project-img"
+          />
+        </div>
+      </section>
+      <section id="contact">
+        <h2 class="section-title"><span class="highlight">Contact Me</span></h2>
+        <form class="contact-form">
+          <input
+            type="text"
+            name="name"
+            class="form-input"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="form-input"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            class="form-textarea"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </section>
+      <footer>
+        <p><span class="highlight">© 2025 Ian Ifill. All rights reserved.</span></p>
+      </footer>
+    </main>
+  </body>
+</html>
